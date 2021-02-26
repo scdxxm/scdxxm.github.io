@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="华三命令VLAN123456#创建vlanvlan &amp;#123;vlan-id1[to vlan-id2 ]|all&amp;#125;#进入vlan视图vlan vlan-id#向当前的vlan添加端口port interface-list  端口123456789101112#配置端口的链路类型为TRunk类型port link-type trunk#允许指定的vlan通过当前Trunk端口port">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/02/26/%E5%8D%8E%E4%B8%89%E5%91%BD%E4%BB%A4%E5%BA%93/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="华三命令VLAN123456#创建vlanvlan &amp;#123;vlan-id1[to vlan-id2 ]|all&amp;#125;#进入vlan视图vlan vlan-id#向当前的vlan添加端口port interface-list  端口123456789101112#配置端口的链路类型为TRunk类型port link-type trunk#允许指定的vlan通过当前Trunk端口port">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-02-26T02:53:43.072Z">
+<meta property="article:modified_time" content="2021-02-26T01:27:46.007Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-华三命令库" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/02/26/%E5%8D%8E%E4%B8%89%E5%91%BD%E4%BB%A4%E5%BA%93/" class="article-date">
+  <time class="dt-published" datetime="2021-02-26T02:53:43.072Z" itemprop="datePublished">2021-02-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="华三命令"><a href="#华三命令" class="headerlink" title="华三命令"></a>华三命令</h1><h2 id="VLAN"><a href="#VLAN" class="headerlink" title="VLAN"></a>VLAN</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">创建vlan</span></span><br><span class="line">vlan &#123;vlan-id1[to vlan-id2 ]|all&#125;</span><br><span class="line"><span class="meta">#</span><span class="bash">进入vlan视图</span></span><br><span class="line">vlan vlan-id</span><br><span class="line"><span class="meta">#</span><span class="bash">向当前的vlan添加端口</span></span><br><span class="line">port interface-list</span><br></pre></td></tr></table></figure>
+
+<h3 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">配置端口的链路类型为TRunk类型</span></span><br><span class="line">port link-type trunk</span><br><span class="line"><span class="meta">#</span><span class="bash">允许指定的vlan通过当前Trunk端口</span></span><br><span class="line">port trunk permit vlan &#123;vlan-id-list|all&#125;</span><br><span class="line"><span class="meta">#</span><span class="bash">设置Trunk端口的缺省vlan</span></span><br><span class="line">port trunk pvid vlan vlan-id</span><br><span class="line"><span class="meta">#</span><span class="bash">配置端口的链路类型为Hybrid类型</span></span><br><span class="line">port link-type hybrid</span><br><span class="line"><span class="meta">#</span><span class="bash">允许指定的Vlan通过当前的Hybrid端口</span></span><br><span class="line">port hybrid vlan vlan-id-list &#123;tagged|untagged&#125;</span><br><span class="line"><span class="meta">#</span><span class="bash">设置Hybrid端口的缺省vlan</span></span><br><span class="line">port hybrid pvid vlan vlan-id</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置MVRP"><a href="#配置MVRP" class="headerlink" title="配置MVRP"></a>配置MVRP</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">开启全局MVRP功能</span></span><br><span class="line">mvrp global enable</span><br><span class="line"><span class="meta">#</span><span class="bash">开启端口的MVRP功能</span></span><br><span class="line">[Switch-Ethernet]mvrp enable</span><br><span class="line"><span class="meta">#</span><span class="bash">配置MVRP注册模式</span></span><br><span class="line">[Switch-Ethernet]mvrp registration &#123;fixed|forbiden\normal&#125;</span><br><span class="line"><span class="meta">#</span><span class="bash">配置Periodic定时器、Join定时器、Leave定时器和Leaveall定时器</span></span><br><span class="line">[Switch-Ethernet]mrp timer &#123;periodic|join|leave|leaveall&#125; timer-value</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/02/26/%E5%8D%8E%E4%B8%89%E5%91%BD%E4%BB%A4%E5%BA%93/" data-id="ckllpbeo10001hkvf5ks54ls9" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/02/26/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/02/26/%E5%8D%8E%E4%B8%89%E5%91%BD%E4%BB%A4%E5%BA%93/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/02/26/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
